@@ -1,0 +1,7 @@
+<h1>Listings</h1>
+<% @listings.each do |listing| %>
+  <div style="margin-top:30px">
+    <h4>Title: <%= listing.title %></h4>
+    <p>Description: <%= listing.description %></p>
+  </div>
+<% end %>

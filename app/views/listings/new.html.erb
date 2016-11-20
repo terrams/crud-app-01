@@ -1,0 +1,12 @@
+<h1>New Listing</h1>
+<%= form_tag '/listings', method: :post do %>
+  <div>
+    <%= label_tag :title %>
+    <%= text_field_tag :title %>
+  </div>
+  <div>
+    <%= label_tag :description %>
+    <%= text_field_tag :description %>
+  </div>
+  <%= submit_tag "Add listing" %>
+<% end %>
